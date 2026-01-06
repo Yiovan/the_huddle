@@ -1,17 +1,102 @@
-# Conceptos a dominar
+1. Escenario & Reto
+Estás en una ciudad desconocida. El cielo está nublado, los caminos bloqueados por desvíos misteriosos, y tu GPS acaba de decir:
 
-## Dijkstra
-es un algorimto de busqueda de caminos minimos, sirve para encontrat el camino mas corto desde un nodo origen hacia los demas nodos en un grafo con pesos positivos
+“Buena suerte, estás por tu cuenta.”
 
--  empieza de un nodo inicial
-- elige siempre un nodo no visitado con menor distancia acumulada
-- actualiza las distancias a sus vecinos
-- repite hasta visitar todos o llegar destinos
+Te giras y ves una cabina con un cartel oxidado que dice:
+“THE HUDDLE — Calculadora de Rutas para los Elegidos”
 
----
+Al ingresar, la pantalla parpadea y aparece un mensaje:
 
-## BFS
-es un sistema de colas primero en entrar primero en salir **FIFO**
+"Solo quien domine los caminos podrá guiar a otros. Tu misión: crear una herramienta que encuentre la mejor ruta posible… incluso cuando el mundo parece un laberinto sin salida."
 
+🎯 Así comienza tu reto. Tendrás que construir una calculadora de rutas desde cero. Una herramienta que analice un mapa lleno de obstáculos y descubra el camino más corto entre dos puntos, esquivando lo imposible y optimizando cada movimiento.
 
+2. Habilidades Que Vas a Necesitar
+📍Modelado de mapas con matrices bidimensionales.
 
+🧠 Algoritmos de búsqueda de rutas como Dijkstra, BFS o A*.
+
+🛠️ Manipulación de coordenadas, obstáculos y lógica de caminos alternativos.
+
+🧪 Validación y visualización de rutas en consola.
+
+🧰 Estructuras de datos eficientes y configuraciones dinámicas.
+
+3. Requisitos Obligatorios (La Ruta a Seguir)
+1. Mapa Interactivo:
+
+Representa el mundo como una matriz bidimensional.
+
+Usa valores para diferenciar terrenos:
+
+0: Camino libre.
+
+1: Edificio (obstáculo).
+
+2: Agua (obstáculo con ruta alternativa).
+
+3: Zonas bloqueadas temporalmente.
+
+2. Punto de Inicio y Destino:
+
+Permite al usuario ingresar coordenadas de inicio y fin.
+
+Valida que no caigan sobre un obstáculo ni fuera del mapa.
+
+3. Visualización del Mapa (versión CLI o GUI simple):
+
+Representa caminos transitables como ., obstáculos como X, y la ruta más corta como *.
+
+Actualiza el mapa en tiempo real al añadir obstáculos o recalcular rutas.
+
+4. Algoritmo de Búsqueda de Ruta:
+
+Usa una estrategia lógica para encontrar el camino más corto, como BFS.
+
+Permite hallar rutas alternativas si hay obstáculos imprevistos.
+
+La solución debe ser clara, lógica y escalable.
+
+5. Parámetros Dinámicos:
+
+El tamaño del mapa debe ser configurable.
+
+Permite agregar obstáculos sin modificar el código fuente.
+
+4. Entregables, Reglas y Bonus Opcionales
+Entregables:
+
+Un script en Python, JavaScript o C++.
+
+Un README corto explicando:
+
+Qué hiciste.
+
+Qué algoritmo usaste.
+
+Qué aprendiste.
+
+Reglas:
+
+Prioriza claridad, estructura y lógica. No hace falta una interfaz visual compleja.
+
+El código debe poder ejecutarse con diferentes tamaños de mapa y configuraciones.
+
+Bonus Opcionales:
+
+Implementa diferentes tipos de terreno con diferentes “costos de movimiento”.
+
+Agrega un sistema de niveles: rutas más difíciles, con más obstáculos y eventos especiales.
+
+Crea una función para simular tráfico temporal que obligue a recalcular rutas dinámicamente.
+
+Haz que el usuario pueda jugar con el mapa como si fuera una misión (modo explorador).
+
+🚀 ¿Estás Listo para Ser el Guía del Camino?
+El mapa no se escribe solo. Cada obstáculo que agregues, cada ruta que traces, y cada decisión que tome tu algoritmo cuenta.
+
+Creamos soluciones para el mundo real. Y cuando ese mundo se vuelve caótico, tú eres quien encuentra el camino.
+
+¿Preparado para guiar el rumbo?
+El destino... se calcula en código. 🧭✨
